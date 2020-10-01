@@ -47,7 +47,7 @@ function addListAfterClick() {
   if (inputLength() > 0) {
     createListElement();
   } else {
-    alert("Write something!");
+    alert("You have to write something!");
   }
 }
 
