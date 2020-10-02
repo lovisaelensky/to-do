@@ -5,7 +5,7 @@ var ul = document.querySelector("ul");
 var list = document.getElementsByTagName("li");
 var del = document.getElementsByClassName("delete-btn");
 
-
+// Adds event listeners to already existing items
 for (var i = 0; i < del.length; i++) {
   del[i].addEventListener("click", deleteListElement);
 }
@@ -14,7 +14,7 @@ for (var i = 0; i < list.length; i++) {
   list[i].addEventListener("click", liClick);
 }
 
-// removes parent element (since button is a child)
+// Removes parent element (since button is a child)
 function deleteListElement() {
   this.parentElement.remove();
 }
